@@ -7,6 +7,8 @@ module.exports = {
     },
   ],
   customEnvVariables: {
+    GITHUB_COM_TOKEN: process.env.GITHUB_COM_TOKEN,
     NPM_AUTH_READ_TOKEN: process.env.NPM_AUTH_READ_TOKEN,
+    RENOVATE_NPMRC: process.env.RENOVATE_NPMRC,
   },
 };
