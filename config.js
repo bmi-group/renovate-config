@@ -9,6 +9,5 @@ module.exports = {
   npmrc: process.env.RENOVATE_NPMRC,
   customEnvVariables: {
     NPM_AUTH_READ_TOKEN: process.env.NPM_AUTH_READ_TOKEN,
-    RENOVATE_NPMRC: process.env.RENOVATE_NPMRC,
   },
 };
