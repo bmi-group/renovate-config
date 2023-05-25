@@ -6,6 +6,7 @@ module.exports = {
       token: process.env.NPM_AUTH_READ_TOKEN,
     },
   ],
+  npmrc: process.env.RENOVATE_NPMRC,
   customEnvVariables: {
     GITHUB_COM_TOKEN: process.env.GITHUB_COM_TOKEN,
     NPM_AUTH_READ_TOKEN: process.env.NPM_AUTH_READ_TOKEN,
