@@ -1,7 +1,6 @@
 include:
-    - project: 'renovate-bot/renovate-runner'
-      file: '/templates/renovate.gitlab-ci.yml'
+  - project: "renovate-bot/renovate-runner"
+    file: "/templates/renovate.gitlab-ci.yml"
 
 variables:
   RENOVATE_NPMRC: $RENOVATE_NPMRC
-  NPM_AUTH_READ_TOKEN: $NPM_AUTH_READ_TOKEN
