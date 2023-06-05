@@ -1,7 +1,9 @@
 module.exports = {
   assigneesFromCodeOwners: true,
   autodiscover: true,
-  autodiscoverFilter: ["bmi-digital/{yarn-project-starter,ui-library}"],
+  autodiscoverFilter: [
+    "bmi-digital/{eslint-config,tsconfig,ui-library,yarn-project-starter}",
+  ],
   customEnvVariables: {
     NPM_AUTH_READ_TOKEN: process.env.NPM_AUTH_READ_TOKEN,
   },
