@@ -1,4 +1,5 @@
 module.exports = {
+  assigneesFromCodeOwners: true,
   autodiscover: true,
   autodiscoverFilter: ["bmi-digital/{yarn-project-starter,ui-library}"],
   customEnvVariables: {
@@ -25,13 +26,9 @@ module.exports = {
       matchUpdateTypes: ["minor", "patch"],
       matchCurrentVersion: "!/^0/",
       automerge: true,
+      // Uncomment if we want to have all non-major updates grouped together in the same MR to save on build minutes
+      //   groupName: "all non-major dependencies",
+      //   groupSlug: "all-minor-patch",
     },
-    // Uncomment if we want to have all non-major updates grouped together in the same MR to save on build minutes
-    // {
-    //   matchPackagePatterns: ["*"],
-    //   matchUpdateTypes: ["minor", "patch"],
-    //   groupName: "all non-major dependencies",
-    //   groupSlug: "all-minor-patch",
-    // },
   ],
 };
