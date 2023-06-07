@@ -2,7 +2,7 @@ module.exports = {
   assigneesFromCodeOwners: true,
   autodiscover: true,
   autodiscoverFilter: [
-    "bmi-digital/{apps-factory,contentful-integrations,contentful-migration,devops,devops-interview-exercise,eslint-config,frontend-interview-exercise,gitlab-templates,hybris-interview-exercise,tsconfig,ui-library,yarn-project-starter}",
+    "bmi-digital/{apps-factory,components,contentful-integrations,contentful-migration,devops,devops-interview-exercise,dxb,eslint-config,frontend-interview-exercise,gitlab-templates,hybris-interview-exercise,intouch,tsconfig,ui-library,yarn-project-starter}",
   ],
   customEnvVariables: {
     NPM_AUTH_READ_TOKEN: process.env.NPM_AUTH_READ_TOKEN,
