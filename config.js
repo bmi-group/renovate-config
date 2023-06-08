@@ -2,7 +2,7 @@ module.exports = {
   assigneesFromCodeOwners: true,
   autodiscover: true,
   autodiscoverFilter: [
-    "bmi-digital/{apps-factory,bmi-cicd-config,c4c-automation,components,contentful-integrations,contentful-migration,devops,devops-interview-exercise,dxb,eslint-config,frontend-interview-exercise,gitlab-templates,hybris-interview-exercise,intouch,intouch-nonprod-database-recreate,intouchdatabase,jira-connector,license-finder,sustainability-dashboard,tsconfig,ui-library,yarn-project-starter}",
+    "bmi-digital/{apps-factory,bmi-cicd-config,c4c-automation,components,contentful-integrations,contentful-migration,devops,devops-interview-exercise,dxb,eslint-config,frontend-interview-exercise,gitlab-templates,gradle-project-starter,hybris-interview-exercise,intouch,intouch-nonprod-database-recreate,intouchdatabase,jira-connector,license-finder,sustainability-dashboard,tsconfig,ui-library,yarn-project-starter}",
     "bmi-digital/softserve/{auth0-config-automation,dxbtestautomation,pim-nextgen-ta}",
   ],
   customEnvVariables: {
