@@ -28,6 +28,7 @@ module.exports = {
     {
       matchUpdateTypes: ["minor", "patch"],
       matchCurrentVersion: "!/^0/",
+      autoApprove: true,
       automerge: true,
       automergeType: "pr",
       platformAutomerge: true,
