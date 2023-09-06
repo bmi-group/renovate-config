@@ -26,15 +26,27 @@ module.exports = {
   onboarding: true,
   packageRules: [
     {
-      matchUpdateTypes: ["minor", "patch"],
-      matchCurrentVersion: "!/^0/",
-      autoApprove: true,
-      automerge: true,
-      automergeType: "pr",
-      platformAutomerge: true,
-      // Uncomment if we want to have all non-major updates grouped together in the same MR to save on build minutes
-      //   groupName: "all non-major dependencies",
-      //   groupSlug: "all-minor-patch",
+      "matchPackageNames": ["@bmi-digital/components"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
     },
+    {
+      "matchDepPatterns": ["^@mui"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    },
+    {
+      "excludeDepNames": ["@bmi-digital/components"],
+      "excludeDepPatterns": ["^@mui"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    }
   ],
 };
