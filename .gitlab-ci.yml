@@ -4,3 +4,7 @@ include:
 
 variables:
   LOG_LEVEL: debug
+
+renovate:
+  tags:
+    - k8s_cicd_runner
