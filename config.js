@@ -18,6 +18,7 @@ module.exports = {
     automerge: true,
     automergeType: "pr",
     platformAutomerge: true,
+    autoApprove: true,
   },
   onboarding: true,
   packageRules: [
@@ -26,12 +27,14 @@ module.exports = {
       automerge: true,
       automergeType: "pr",
       platformAutomerge: true,
+      autoApprove: true,
     },
     {
       matchDepPatterns: ["^@mui"],
       automerge: true,
       automergeType: "pr",
       platformAutomerge: true,
+      autoApprove: true,
     },
     {
       excludeDepNames: ["@bmi-digital/components"],
@@ -43,6 +46,7 @@ module.exports = {
       platformAutomerge: true,
       groupName: "all non-major dependencies",
       groupSlug: "all-minor-patch",
+      autoApprove: true,
     },
   ],
 };
