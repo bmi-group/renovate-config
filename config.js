@@ -48,5 +48,9 @@ module.exports = {
       groupSlug: "all-minor-patch",
       autoApprove: true,
     },
+    {
+      matchPackageNames: ["@lhci/cli"],
+      allowedVersions: "!/^0.13.0$/"
+    }
   ],
 };
