@@ -1,7 +1,6 @@
 module.exports = {
   assigneesFromCodeOwners: true,
   autodiscover: true,
-  autodiscoverFilter: ["!/bmi-digital/softserve/dxbtestautomation/"],
   customEnvVariables: {
     NPM_AUTH_READ_TOKEN: process.env.NPM_AUTH_READ_TOKEN,
   },
