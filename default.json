@@ -1,6 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": [
+    "config:recommended"
+  ],
+  "assigneesFromCodeOwners": true,
+  "hostRules": [
+    {
+      "hostType": "npm",
+      "matchHost": "registry.npmjs.org",
+      "token": "{{ secrets.NPM_AUTH_READ_TOKEN }}"
+    }
+  ],
+  "labels": [
+    "dependencies"
+  ],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
@@ -10,23 +23,34 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["@bmi-digital/components"],
+      "matchPackageNames": [
+        "@bmi-digital/components"
+      ],
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true,
       "autoApprove": true
     },
     {
-      "matchDepPatterns": ["^@mui"],
+      "matchDepPatterns": [
+        "^@mui"
+      ],
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true,
       "autoApprove": true
     },
     {
-      "excludeDepNames": ["@bmi-digital/components"],
-      "excludeDepPatterns": ["^@mui"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "excludeDepNames": [
+        "@bmi-digital/components"
+      ],
+      "excludeDepPatterns": [
+        "^@mui"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "automergeType": "pr",
