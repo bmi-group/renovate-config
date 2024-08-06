@@ -41,8 +41,19 @@
       "autoApprove": true
     },
     {
+      "matchPackageNames": [
+        "yarn"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "autoApprove": true
+    },
+    {
       "excludeDepNames": [
-        "@bmi-digital/components"
+        "@bmi-digital/components",
+        "yarn"
       ],
       "excludeDepPatterns": [
         "^@mui"
