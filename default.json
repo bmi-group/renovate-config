@@ -14,6 +14,11 @@
   "labels": [
     "dependencies"
   ],
+  "onboardingConfig": {
+    "extends": [
+      "local>bmi-group/renovate-config"
+    ]
+  },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
