@@ -14,9 +14,6 @@
   "labels": [
     "dependencies"
   ],
-  "schedule": [
-    "after 10pm and before 5:00am"
-  ],
   "onboardingConfig": {
     "extends": [
       "local>bmi-group/renovate-config"
