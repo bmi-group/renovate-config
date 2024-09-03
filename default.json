@@ -49,7 +49,6 @@
       "matchPackageNames": [
         "yarn"
       ],
-      "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true,
