@@ -28,7 +28,7 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "@bmi-digital/components"
       ],
       "automerge": true,
@@ -46,7 +46,7 @@
       "autoApprove": true
     },
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "yarn"
       ],
       "automerge": true,
